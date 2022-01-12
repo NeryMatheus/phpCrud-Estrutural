@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Listagem de Produtos</title>
     <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="https://kit.fontawesome.com/e1b636d3b5.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -20,6 +21,7 @@
             <th scope="col">Categoria</th>
             <th scope="col">Quantidade</th>
             <th scope="col">Fornecedor</th>
+            <th scope="col">Ação</th>
             </tr>
         </thead>
 
@@ -43,6 +45,7 @@
         <td><?php echo $categoria?></td>
         <td><?php echo $quantidade?></td>
         <td><?php echo $fornecedor?></td>
+        <td><a class="btn btn-warning btn-sm" href="editarProduto.php?id=<?php echo $id_estoque?>" role="button"><i class="far fa-edit"></i>&nbsp;Editar</a></td>
         </tr>
         
         <?php } ?>
