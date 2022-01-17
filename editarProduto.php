@@ -1,7 +1,7 @@
 <?php
 include 'conexao.php';
 
-echo $id = $_GET['id'];
+$id = $_GET['id'];
 
 ?>
 
@@ -31,7 +31,7 @@ echo $id = $_GET['id'];
 
     <div class="container" id="maxContainer">
     <h3>Formulário de Cadastro</h3>
-        <form action="_inserir_produto.php" method="POST" style="margin-top: 20px;">
+        <form action="_atualizar_produto.php" method="POST" style="margin-top: 20px;">
 
             <?php
                 $sql = "SELECT * FROM `estoque` WHERE id_estoque = $id";
@@ -51,6 +51,7 @@ echo $id = $_GET['id'];
             <div class="form-group">
                 <label>Número do Produto</label>
                 <input type="number" class="form-control" name="nroProduto" value="<?php echo $nroproduto?>" disabled>
+                <input type="number" class="form-control" name="id" value="<?php echo $id?>" style="display: none">
             </div>
             <div class="form-group">
                 <label>Nome do Produto</label>
@@ -59,7 +60,7 @@ echo $id = $_GET['id'];
 
             <div class="form-group">
                 <label>Categoria</label>
-                <select class="form-control" name="categoria"  value="<?php echo $categoria?>">
+                <select class="form-control" name="categoria">
                     <option>Periféricos</option>
                     <option>Hardwares</option>
                     <option>Softwares</option>
@@ -74,7 +75,7 @@ echo $id = $_GET['id'];
 
             <div class="form-group">
                 <label>Fornecedor</label>
-                <select class="form-control" name="fornecedor"  value="<?php echo $fornecedor?>">
+                <select class="form-control" name="fornecedor">
                     <option>Fornecedor A</option>
                     <option>Fornecedor B</option>
                     <option>Fornecedor C</option>
