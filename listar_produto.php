@@ -45,13 +45,18 @@
         <td><?php echo $categoria?></td>
         <td><?php echo $quantidade?></td>
         <td><?php echo $fornecedor?></td>
-        <td><a class="btn btn-warning btn-sm" href="editarProduto.php?id=<?php echo $id_estoque?>" role="button"><i class="far fa-edit"></i>&nbsp;Editar</a></td>
+        <td>
+            <a class="btn btn-warning btn-sm" href="editarProduto.php?id=<?php echo $id_estoque?>" role="button"><i class="far fa-edit"></i>&nbsp;Editar</a>
+            <a class="btn btn-danger btn-sm" href="deletarProduto.php?id=<?php echo $id_estoque?>" role="button"><i class="far fa-trash-alt"></i>&nbsp;Deletar</a>
+        </td>
         </tr>
         
         <?php } ?>
     </table>
+    <div style="text-align: right;">
+        <a href="index.php" role="button" class="btn btn-primary btn-sm">Voltar</a>
+    </div>
 </div>
-
 
 
 <script type="text/javascript" src="js/bootstrap.js"></script>

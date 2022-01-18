@@ -1,17 +1,10 @@
-<?php
-include 'conexao.php';
-
-$id = $_GET['id'];
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Editando produto</title>
+    <title>Formulário de Cadastro</title>
     <!-- Importes CDN - Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.css">
 
@@ -30,32 +23,15 @@ $id = $_GET['id'];
 <body>
 
     <div class="container" id="maxContainer">
-    <h3>Editando Produto</h3>
-        <form action="_atualizar_produto.php" method="POST" style="margin-top: 20px;">
-
-            <?php
-                $sql = "SELECT * FROM `estoque` WHERE id_estoque = $id";
-                $buscar = mysqli_query($conexao, $sql);
-
-                while($array = mysqli_fetch_array($buscar)){
-                    
-                    $id_estoque = $array['id_estoque'];
-                    $nroproduto = $array['nroproduto'];
-                    $nomeproduto = $array['nomeproduto'];
-                    $categoria = $array['categoria'];
-                    $quantidade = $array['quantidade'];
-                    $fornecedor = $array['fornecedor'];
-                
-            ?>
-
+    <h3>Formulário de Cadastro</h3>
+        <form action="_inserir_produto.php" method="POST" style="margin-top: 20px;">
             <div class="form-group">
                 <label>Número do Produto</label>
-                <input type="number" class="form-control" name="nroProduto" value="<?php echo $nroproduto?>" disabled>
-                <input type="number" class="form-control" name="id" value="<?php echo $id?>" style="display: none">
+                <input type="number" class="form-control" name="nroProduto" placeholder="Insira o número do produto" autocomplete="off" required>
             </div>
             <div class="form-group">
                 <label>Nome do Produto</label>
-                <input type="text" class="form-control" name="nomeProduto"  value="<?php echo $nomeproduto?>">
+                <input type="text" class="form-control" name="nomeProduto" placeholder="Insira o nome do produto" autocomplete="off" required>
             </div>
 
             <div class="form-group">
@@ -70,7 +46,7 @@ $id = $_GET['id'];
 
             <div class="form-group">
                 <label>Quantidade do Produto</label>
-                <input type="number" class="form-control" name="quantidade" value="<?php echo $quantidade?>">
+                <input type="number" class="form-control" name="quantidade" placeholder="Insira a quantidade do produto" autocomplete="off" required>
             </div>
 
             <div class="form-group">
@@ -83,9 +59,9 @@ $id = $_GET['id'];
             </div>
 
             <div style="text-align:right;">
-                <button type="submit" id="botao" class="btn btn-sm">Atualizar</button>
+                <a href="index.php" role="button" class="btn btn-primary btn-sm">Voltar</a>
+                <button type="submit" id="botao" class="btn btn-sm">Cadastrar</button>    
             </div>
-        <?php } ?>
         </form>
     </div>
 
