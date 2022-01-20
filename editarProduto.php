@@ -83,6 +83,7 @@ $id = $_GET['id'];
             </div>
 
             <div style="text-align:right;">
+                <a href="listar_produto.php" class="btn btn-sm btn-primary">Voltar</a>
                 <button type="submit" id="botao" class="btn btn-sm">Atualizar</button>
             </div>
         <?php } ?>
