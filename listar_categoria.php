@@ -11,7 +11,7 @@
 <body>
 
 <div class="container" style="margin-top: 40px; width: 500px;">
-    <h3>Lista de Produtos</h3>
+    <h3>Lista de Categoria</h3>
     <br>
     <table class="table">
         <thead>
