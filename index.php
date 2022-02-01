@@ -5,57 +5,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu</title>
-    <!-- Importes CDN - Bootstrap -->
+    <title>Tela de Login</title>
     <link rel="stylesheet" href="css/bootstrap.css">
+
+    <style type="text/css">
+        #tamanho {
+            width: 350px;
+            margin-top: 100px;
+            border-radius: 15px;
+            border: 2px solid #f3f3f3;
+            padding: 10px;
+            -webkit-box-shadow: 10px 10px 28px -8px rgba(194, 194, 194, 1);
+            -moz-box-shadow: 10px 10px 28px -8px rgba(194, 194, 194, 1);
+            box-shadow: 10px 10px 28px -8px rgba(194, 194, 194, 1);
+        }
+    </style>
 </head>
 
 <body>
-    <div class="container" style="margin-top: 100px;">
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Adicionar Produto</h5>
-                        <p class="card-text">Opção para adicionar produtos em nosso estoque</p>
-                        <a href="adicionarProduto.php" class="btn btn-primary">Cadastrar Produto</a>
-                    </div>
-                </div>
+
+    <div class="container" id="tamanho">
+        <center>
+            <img src="img/cadeado.png" width="125px;" height="125px;">
+        </center>
+        <form>
+            <div class="form-group">
+                <label>Usuário</label>
+                <input type="text" name="usuario" class="form-control" placeholder="Usuário" autocomplete="off" required>
             </div>
-            <div class="col-sm-6">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Listar Produtos</h5>
-                        <p class="card-text">Visualizar, editar e excluir produtos</p>
-                        <a href="listar_produto.php" class="btn btn-primary">Produtos</a>
-                    </div>
-                </div>
+
+            <div class="form-group">
+                <label>Senha</label>
+                <input type="password" name="senha" class="form-control" placeholder="Senha" autocomplete="off" required>
             </div>
+        </form>
+
+        <div style="text-align:center;">
+            <button type="submit" class="btn btn-sm btn-success">Entrar</button>
         </div>
+
     </div>
 
-    <div class="container" style="margin-top: 100px;">
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Adicionar Categoria</h5>
-                        <p class="card-text">Opção para adicionar categoria de produtos</p>
-                        <a href="adicionar_categoria.php" class="btn btn-primary">Cadastrar Categoria</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Adicionar Fornecedor</h5>
-                        <p class="card-text">Opção para adicionar fornecedores</p>
-                        <a href="adicionar_fornecedor.php" class="btn btn-primary">Cadastrar fornecedores</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
 </body>
 
 </html>
