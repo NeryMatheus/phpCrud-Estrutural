@@ -14,7 +14,7 @@
   
 <div class="container" style="width: 400px; margin-top: 40px;">
     <h4>Cadastro de Usuário</h4>
-    <form action="">
+    <form action="_insert_usuario.php" method="POST">
         <div class="form-group">
             <label>Nome do Usuário</label>
             <input type="text" name="nomeusuario" class="form-control" autocomplete="off" placeholder="Nome completo" required>
@@ -49,8 +49,8 @@
 
         <div style="text-align: rigth;">
             <button type="submit" class="btn btn-sm btn-success">Cadastrar</button>
-        </div>
-
+            <a href="menu.php" role="button" class="btn btn-sm btn-primary">Voltar</a>
+        </div>  
     </form>
 </div>
 
