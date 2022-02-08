@@ -46,6 +46,12 @@
 
     </div>
 
+    <div style="margin-top: 10px;">
+        <center>
+            <small>Você não possui cadastro. Clique <a href="cadastro_usuario_externo.php">aqui</a></small>
+        </center>
+    </div>
+
     <script type="text/javascript" src="js/bootstrap.js"></script>
 </body>
 

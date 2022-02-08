@@ -56,6 +56,20 @@
             </div>
         </div>
     </div>
+
+    <div class="container" style="margin-top: 100px;">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Aprovar usuários</h5>
+                        <p class="card-text">Aprovar usuários cadastrados!</p>
+                        <a href="aprovar_usuario.php" class="btn btn-primary">Aprovar Usuários</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
