@@ -45,7 +45,7 @@
                         <a class="btn btn-success btn-sm" href="_aprovar_usuario.php?id=<?php echo $id_usuario ?>&nivel=1" role="button"><i class="far fa-smile-beam"></i>&nbsp;Administrador</a>
                         <a class="btn btn-warning btn-sm" href="_aprovar_usuario.php?id=<?php echo $id_usuario ?>&nivel=2" role="button"><i class="far fa-smile-beam"></i>&nbsp;Funcionário</a>
                         <a class="btn btn-light btn-sm" href="_aprovar_usuario.php?id=<?php echo $id_usuario ?>&nivel=3" role="button"><i class="far fa-smile-beam"></i>&nbsp;Conferente</a>
-                        <a class="btn btn-danger btn-sm" href="_deletar_usuario.php?id=<?php echo $id_usuario ?>&nivel=<php echo $nivel>" role="button"><i class="far fa-trash-alt"></i>&nbsp;Deletar</a>
+                        <a class="btn btn-danger btn-sm" href="_deletar_usuario.php?id=<?php echo $id_usuario ?>" role="button"><i class="far fa-trash-alt"></i>&nbsp;Deletar</a>
                     </td>
                 </tr>
 

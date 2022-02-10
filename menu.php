@@ -11,6 +11,14 @@
 </head>
 
 <body>
+
+    <?php
+        $usuario = $_SESSION['usuario'];
+        if (!isset($usuario)) {
+            header("Location: index.php");
+        }
+    ?>
+
     <div class="container" style="margin-top: 100px;">
         <div class="row">
             <div class="col-sm-6">
