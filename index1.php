@@ -19,6 +19,8 @@ while ($array = mysqli_fetch_array($buscar)) {
 
     if ($total > 0) {
         if ($senhadecodificada == $senha) {
+            session_start();
+            $_SESSION['usuario'] = $usuario;
             header("Location: menu.php");
         } else {
             header("Location: erro.php");
